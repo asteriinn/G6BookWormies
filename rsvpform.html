@@ -1,0 +1,90 @@
+<!--S65533 Siti Aisyah Amanina-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>RSVP Form</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="bookwormies.js"></script>
+</head>
+<body style="background-color: rgb(234, 230, 221);">
+
+    <div class="header">
+        <nav class="navbar navbar-expand-sm justify-content-center">
+            <a href="homepage.html"><img src="logo.jpg" alt="logo" class="logo"></a>
+            <div class="dropdown">
+                <button class="dropbtn">GENRE</a></button>
+                <div class="dropdown-content dc1">
+                    <a href="bookselectionpage.html" onclick="loadContent('action')">ACTION</a>
+                    <a href="bookselectionpage.html" onclick="loadContent('mystery')">MYSTERY</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">EVENT</button>
+                <div class="dropdown-content dc2">
+                    <a href="mng.html">MEET N GREET</a>
+                    <a href="bbw.html">BIG BAD WOLF</a>
+                </div>
+            </div>
+            <a href="authors.html">AUTHOR</a>
+            <a href="about.html">ABOUT US</a>
+            <div class="search-container">
+                <form action="/action_page.php">
+                  <input type="text" placeholder="SEARCH" name="search">
+                  <button type="submit"><i class="fa fa-search"></i></button>
+                </form>
+            </div>
+        </nav>
+    </div>
+
+        <div class="container">
+            <div class="container_login">
+                <h3>RSVP</h3>
+                <hr>
+       
+                <form id="form_id" method="post" name="loginform">
+       
+                    <label><b>Full Name:</b></label>
+                    <input type="text" placeholder="Enter your full name" name="fname" id="fname" required/>
+                    <br>
+       
+                    <label for="email"><b>Email: </b></label>
+                    <input type="email" placeholder="Enter your email" name="email" id="emailaddr" required/>
+                    <br>
+
+                    <label for="phone"><b>Phone Number: </b></label>
+                    <input type="tel" placeholder="012-345 6789" pattern="[0-9]{3}-[0-9]{3} [0-9]{4}" name="phone" id="phone" required/>
+                    <br>
+        
+                    <label for="attendee">Number of Attendee(s): </label>
+                    <select id="attendee" name="attendee">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                    <br>
+
+                    <div class="button-wrapper">
+                        <button class="submit" id="submit" onclick="validate()">Submit</button>
+                    </div>
+
+                </form>
+        
+            </div>
+        </div>
+
+</body>
+
+<div class="footer">
+    <p>G6 BookWormies | &copy; 23/24 CSF3133 K4 All Rights Reserved.</p>
+</div>
+
+</html>

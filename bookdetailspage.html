@@ -1,0 +1,94 @@
+<!--S65533 Siti Aisyah Amanina-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Book Details</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="bookwormies.js"></script>
+</head>
+<body class="bookdetails" style="background-color: rgb(234, 230, 221);">
+
+    <div class="header">
+        <nav class="navbar navbar-expand-sm justify-content-center">
+            <a href="homepage.html"><img src="logo.jpg" alt="logo" class="logo"></a>
+            <div class="dropdown">
+                <button class="dropbtn">GENRE</a></button>
+                <div class="dropdown-content dc1">
+                    <a href="bookselectionpage.html" onclick="loadContent('action')">ACTION</a>
+                    <a href="bookselectionpage.html" onclick="loadContent('mystery')">MYSTERY</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">EVENT</button>
+                <div class="dropdown-content dc2">
+                    <a href="mng.html">MEET N GREET</a>
+                    <a href="bbw.html">BIG BAD WOLF</a>
+                </div>
+            </div>
+            <a href="authors.html">AUTHOR</a>
+            <a href="about.html">ABOUT US</a>
+            <div class="search-container">
+                <form action="/action_page.php">
+                  <input type="text" placeholder="SEARCH" name="search">
+                  <button type="submit"><i class="fa fa-search"></i></button>
+                </form>
+            </div>
+        </nav>
+    </div>
+
+    <div class="book-details-container">
+        <div class="book-details">
+          <img src="renegade-action1.jpg" alt="Book Cover" class="book-cover">
+          <div class="book-info">
+            <p class="book-title">RENEGADES</p>
+            <p class="book-author">by Marissa Meyer</p>
+            <p class="book-synopsis">
+                The Renegades are a syndicate of prodigies—humans with extraordinary abilities—who emerged from the 
+                ruins of a crumbled society and established peace and order where chaos reigned. As champions of justice,
+                they remain a symbol of hope and courage to everyone...except the villains they once overthrew.
+                <br><br>
+                Nova has a reason to hate the Renegades, and she is on a mission for vengeance. As she gets closer to her 
+                target, she meets Adrian, a Renegade boy who believes in justice—and in Nova. But Nova's allegiance is to 
+                the villains who have the power to end them both.
+            </p>
+            <p class="book-rating">Rating: 4.5/5</p>
+            <div class="purchase-links">
+              <hr>
+              <p>Link to purchase: <br>
+              <a href="https://shopee.com.my/-BnB-Renegades-by-Marissa-Meyer-(Used-Very-good)-i.244523198.18786892713?sp_atk=cd1e37f0-0431-4365-9776-dba4363cd7e4&xptdk=cd1e37f0-0431-4365-9776-dba4363cd7e4" target="_blank">Shopee</a><br>
+              <a href="https://www.amazon.com/Renegades-Marissa-Meyer-audiobook/dp/B06X9YX56R/ref=sr_1_4?crid=2QGJG5D8RP65W&keywords=renegades+by+marissa+meyer&qid=1705339807&sprefix=renegades+%2Caps%2C481&sr=8-4" target="_blank">Amazon</a>
+              <hr>
+              </p>
+            </div>
+          </div>
+        </div>
+    
+        <div class="rating-section">
+            <div class="rating-container">
+                <h4 style="text-align: center;">Rate the Book!</h4>
+                <span onclick="gfg(1)" class="star">★</span>
+                <span onclick="gfg(2)" class="star">★</span>
+                <span onclick="gfg(3)" class="star">★</span>
+                <span onclick="gfg(4)" class="star">★</span>
+                <span onclick="gfg(5)" class="star">★</span>
+            </div>
+        <textarea id="reviewInput" placeholder="Tell us what you think about the book..."></textarea>
+        </div>
+
+        <button class="submit-review" id="submit-review" onclick="submitReview()">Submit My Review</button>
+    </div>
+
+</body>
+
+<div class="footer" style="position: relative;">
+    <p>G6 BookWormies | &copy; 23/24 CSF3133 K4 All Rights Reserved.</p>
+</div>
+
+</html>

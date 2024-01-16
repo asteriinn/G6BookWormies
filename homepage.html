@@ -1,0 +1,67 @@
+<!--S65533 Siti Aisyah Amanina-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>BookWormies</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="bookwormies.js"></script>
+</head>
+<body style="background-color: rgb(234, 230, 221);">
+
+    <div class="header">
+        <nav class="navbar navbar-expand-sm justify-content-center">
+            <a href="homepage.html"><img src="logo.jpg" alt="logo" class="logo"></a>
+            <div class="dropdown">
+                <button class="dropbtn">GENRE</a></button>
+                <div class="dropdown-content dc1">
+                    <a href="bookselectionpage.html" onclick="loadContent('action')">ACTION</a>
+                    <a href="bookselectionpage.html" onclick="loadContent('mystery')">MYSTERY</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">EVENT</button>
+                <div class="dropdown-content dc2">
+                    <a href="mng.html">MEET N GREET</a>
+                    <a href="bbw.html">BIG BAD WOLF</a>
+                </div>
+            </div>
+            <a href="authors.html">AUTHOR</a>
+            <a href="about.html">ABOUT US</a>
+            <div class="search-container">
+                <form action="/action_page.php">
+                  <input type="text" placeholder="SEARCH" name="search">
+                  <button type="submit"><i class="fa fa-search"></i></button>
+                </form>
+            </div>
+        </nav>
+    </div>
+
+    <div class="homepage-container">
+        <div class="bigtitle">
+            <p class="website-title">BOOKWORMIES</p><br>
+            <p style="font-size: 20px;">"Reading is a journey that never ends."</p><br>
+            <a href="Registration.html" style="text-decoration: none;"><button class="register">Join Us Now!</button></a>
+        </div>
+        
+        <div class="book-of-the-year">
+            <h2 style="text-align: center;">Book of the Year</h2>
+            <div id="book-details">
+                <a href="bookdetailspage.html"><img src="renegade-action1.jpg" alt="Renegades Cover" class="boty-cover">
+                <h4>RENEGADES</h4><p>By: Marissa Meyer</p></a>
+            </div>
+        </div>
+    </div>
+</body>
+
+<div class="footer">
+    <p>G6 BookWormies | &copy; 23/24 CSF3133 K4 All Rights Reserved.</p>
+</div>
+
+</html>
